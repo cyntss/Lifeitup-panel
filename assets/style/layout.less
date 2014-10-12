@@ -40,18 +40,21 @@ header {
 .container-fluid {
   height: 100%;
   padding: 0;
+  padding-left: 250px;
   position: relative;
   aside {
     background: @gray-darker;
     color: @text-aside;
-    display: inline-block;
     height: 100%;
+    margin-left: -250px;
+    position: absolute;
     vertical-align: top;
     width: 250px;
     ul {
       padding: 0;
       li {
         border-bottom: 1px solid lighten(@gray-darker, 10%);
+        list-style: none;
         .fa {
           margin-right: 10px;
           .fa-lg
@@ -111,8 +114,13 @@ header {
     }
   }
   section {
-    display: inline-block;
+    box-sizing: border-box;
     vertical-align: top;
-    width: 80%;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    .welcome-icon {
+      margin-top: 100px;
+    }
   }
 }
