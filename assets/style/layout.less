@@ -4,27 +4,115 @@ body, html {
 
 body {
   background: @gray-lighter;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
+  background: darken(@gray-lighter, 10%);
   height: 80px;
-  background: darken(@gray-lighter, 20%);
   .logo-Cypressy {
     background: @gray-dark;
-    width: 250px;
-    height: 100%;
+    box-sizing: border-box;
     display: inline-block;
+    height: 100%;
+    padding: 15px;
+    width: 250px;
+  }
+  .user-header {
+    padding: 15px;
+    img {
+      border-radius: 100px;
+      border: 4px solid darken(@gray-lighter, 15%);
+    }
+    .username {
+      font-weight: 700;
+    }
+    a.btn {
+      margin-left: 20px
+    }
   }
 }
+
 .container-fluid {
-  padding: 0;
   height: 100%;
+  padding: 0;
   position: relative;
   aside {
-    height: 100%;
     background: @gray-darker;
-    width: 250px;
+    color: @text-aside;
     display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    width: 250px;
+    ul {
+      padding: 0;
+      li {
+        border-bottom: 1px solid lighten(@gray-darker, 10%);
+        .fa {
+          margin-right: 10px;
+          .fa-lg
+        }
+      }
+      li:nth-child(1) {
+        a:hover {
+          border-left: 5px solid @light-blue;
+        }
+      }
+      li:nth-child(2) {
+        a:hover {
+          border-left: 5px solid @blue;
+        }
+      }
+      li:nth-child(3) {
+        a:hover {
+          border-left: 5px solid @dark-green;
+        }
+      }
+      li:nth-child(4) {
+        a:hover {
+          border-left: 5px solid @green;
+        }
+      }
+      li:nth-child(5) {
+        a:hover {
+          border-left: 5px solid @yellow;
+        }
+      }
+      li:nth-child(6) {
+        a:hover {
+          border-left: 5px solid @orange;
+        }
+      }
+      li:nth-child(7) {
+        a:hover {
+          border-left: 5px solid @pink;
+        }
+      }
+      li:nth-child(8) {
+        a:hover {
+          border-left: 5px solid @purple;
+        }
+      }
+    }
+    a {
+      color: @link-aside;
+      background: @gray-darker;
+      display: block;
+      padding: 25px 15px;
+      border-left: 5px solid @gray-darker;
+      &:hover {
+        background: darken(@gray-darker,10%);
+        text-decoration: none;
+      }
+    }
   }
-
+  section {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+  }
 }
