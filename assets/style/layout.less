@@ -12,15 +12,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 header {
-  background: darken(@gray-lighter, 10%);
+  background: @header-user;
   height: 80px;
   .logo-Cypressy {
-    background: @gray-dark;
+    background: @header-logo;
     box-sizing: border-box;
     display: inline-block;
     height: 100%;
     padding: 15px;
-    width: 250px;
+    width: @aside-width;
   }
   .user-header {
     padding: 15px;
@@ -37,19 +37,40 @@ header {
   }
 }
 
+footer {
+  height: 70px;
+  background: @header-user;
+  font-size: 0.8em;
+  position: relative;
+  .container-footer {
+    margin-left: @aside-width;
+    text-align: left;
+    p {
+      padding: 8px 0 0 15px 
+    }
+  }
+  .aside-footer {
+    width: @aside-width;
+    background: darken(@aside, 10%);
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .container-fluid {
-  height: 100%;
   padding: 0;
-  padding-left: 250px;
+  padding-left: @aside-width;
   position: relative;
   aside {
-    background: @gray-darker;
+    background: @aside;
     color: @text-aside;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -@aside-width;
     position: absolute;
     vertical-align: top;
-    width: 250px;
+    width: @aside-width;
     ul {
       padding: 0;
       li {
