@@ -1,0 +1,73 @@
+//reset all panels border-radius
+.panel {
+  border-radius: 0;
+  .panel-heading {
+    color: @body-text;
+    font-family: @raleway;
+    font-weight: 700;
+    border-bottom: 0;
+  }
+}
+
+.fa-xl {
+  font-size: 2em
+}
+
+.panel-company {
+  .panel;
+  .panel-default;
+  border-radius: 0;
+  background: url("../images/layout/panel-company-bg.jpg");
+  min-height: @height-dashboard-panel-first-row;
+  position: relative;
+  .panel-body {
+    color: @text-panel-company;
+    font-family: @raleway;
+    font-weight: 400
+  }
+  a {
+    color: @text-panel-company;
+  }
+  ul {
+    padding: 0; 
+    li {
+      list-style: none;
+      margin-bottom: 7px
+    }
+  }
+  .fa {
+    margin-right: 10px
+  }
+  h4 {
+    background: @white;
+    border-radius: 4px;
+    color: @body-text;
+    display: inline-block;
+    padding: 7px 13px;
+    margin-bottom: 10px;
+    a {
+      color: @body-text;
+    }
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+  }
+}
+
+
+.panel-last-login {
+  .panel;
+  .panel-default;
+  min-height: @height-dashboard-panel-first-row; 
+  .panel-body {
+    color: @gray-light;
+    font-family: @raleway;
+    font-weight: 700;
+    font-size: 1.5em;
+    .fa {
+      margin-bottom: 0.6em
+    }
+  }
+}

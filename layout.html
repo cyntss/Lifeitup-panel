@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Cypressy Web Admin</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- Stylesheets files -->
   <link rel="stylesheet/less" type="text/css" href="assets/style/cypressy.less" />
@@ -18,14 +19,16 @@
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo-Cypressy">
+    <div class="logo-Cypressy col-xs-12">
       <a href="index.asp">
         <img src="assets/images/layout/cypressy-admin-logo.png">
       </a>
     </div>
     <div class="pull-right user-header">
-      <img src="assets/images/user-profile/demo-user.jpg">
-      Bienvenido <span class="username">Cynthia Sanchez</span>!
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Bienvenido <span class="username">Cynthia Sanchez</span>
+      </div>
       <a href="" class="btn btn-default">
         <i class="fa fa-sign-out"></i>
       </a>
@@ -36,48 +39,88 @@
     <!-- MENU -->
     <aside>
       <ul>
-        <li>
+        <li class="active">
           <a href="">
             <i class="fa fa-dashboard"></i>Inicio
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
             <i class="fa fa-file"></i>Crear Seccion
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
             <i class="fa fa-archive"></i>Crear Producto
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
-            <i class="fa fa-globe"></i>Pagina Inicial
+            <i class="fa fa-globe"></i>Editar Pagina Inicial
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
             <i class="fa fa-edit"></i>Editar Secciones
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
             <i class="fa fa-pencil"></i>Editar Productos
           </a>
+          <div class="list-selected"></div>
         </li>
         <li>
           <a href="">
             <i class="fa fa-key"></i>Contraseña
           </a>
+          <div class="list-selected"></div>
         </li>
       </ul>
     </aside>
     <!-- SECTION -->
     <section>
-      <div class="text-center">
-        <h1>Bienvenido al nuevo Cypressy Admin Panel</h1>
-      
+      <div class="alert alert-info">Le presentamos el nuevo <strong>Cypressy Admin Panel</strong>. Hemos agregado muchas mejoras en la interfaz para facilitar su trabajo diario. El sistema se mantiene exactamente como lo conoce, solo la usabilidad y la grafica es lo que ha cambiado y esperamos sea de su agrado.</div>
+      <div class="row"> 
+        <div class="col-md-9">
+          <div class="panel-company">
+            <div class="panel-body">
+              <div class="edit-buttons">
+                <a href="#"><i class="fa fa-pencil"></i></a>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img src="assets\images\user-profile\logo.jpg" class="circle border-transparent" />
+                </div>
+                <div class="col-sm-9">
+                  <h4><i class="fa fa-globe"></i>URL: <a href="#">www.cypressy.com</a></h4>
+                  <ul>
+                    <li><i class="fa fa-phone"></i>Teléfono (visible): (0351) 4452117 / 4819406</li>  
+                    <li><i class="fa fa-at"></i>E-mail (visible): info@ceiestetica.com</li>
+                    <li><i class="fa fa-home"></i>Dirección comercial (visible): Av. Menendez Pidal 4.125 – Urca – Córdoba Capital (X5009)</li>
+                    <li><i class="fa fa-inbox"></i>Email formulario de contacto (no visible): info@ceiestetica.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel-last-login">
+            <div class="panel-heading">
+              Last time you logged in: 
+            </div>
+            <div class="panel-body text-center">
+              <i class="fa fa-calendar fa-xl"></i>
+              <p>12/10/2014 02:40:59 p.m.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

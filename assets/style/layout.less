@@ -4,11 +4,14 @@ body, html {
 
 body {
   background: @gray-lighter;
-  font-family: 'Raleway', sans-serif;
+  color: @body-text;
+  font-family: arial;
+  font-size: @body-text-size
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Raleway', sans-serif;
+  font-family: @raleway;
+  font-weight: 400
 }
 
 header {
@@ -34,6 +37,8 @@ header {
     a.btn {
       margin-left: 20px
     }
+  }.hidden-xs {
+    display: inline;
   }
 }
 
@@ -79,6 +84,23 @@ footer {
         .fa {
           margin-right: 10px;
           .fa-lg
+        }
+        position: relative;
+        .list-selected {
+          position: absolute;
+          border-right: 15px @gray-lighter solid;
+          border-top: 15px transparent solid;
+          border-bottom: 15px transparent solid;
+          width: 30px;
+          height: 30px;
+          top: 20px;
+          right: 0px;
+          display: none;
+        }
+        &.active {
+          .list-selected {
+            display: inline;
+          }
         }
       }
       li:nth-child(1) {
