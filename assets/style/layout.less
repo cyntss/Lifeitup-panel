@@ -9,27 +9,30 @@ body {
   font-size: @body-text-size;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6 {
   font-family: @raleway;
   font-weight: 400;
 }
 
 header {
   background: @header-user-bg;
-  height: 80px;
-  .logo-Cypressy {
+  height: 50px;
+  .logo-header {
     background: @header-logo-bg;
     box-sizing: border-box;
     display: inline-block;
     height: 100%;
-    padding: 15px;
+    padding-top: 12px;
+    padding-left: 20px;
     width: @aside-width;
+    text-align: left;
   }
   .user-header {
-    padding: 15px;
+    padding: 5px 15px;
     img {
       border-radius: 100px;
       border: 4px solid darken(@gray-lighter, 15%);
+      width: 40px;
     }
     .username {
       font-weight: 700;
@@ -45,7 +48,7 @@ header {
 footer {
   height: 70px;
   background: @header-user-bg;
-  font-size: 0.8em;
+  font-size: 0.9em;
   position: relative;
   .container-footer {
     margin-left: @aside-width;
@@ -159,7 +162,6 @@ footer {
   section {
     box-sizing: border-box;
     vertical-align: top;
-    height: 100%;
     width: 100%;
     padding: 15px;
     .welcome-icon {
