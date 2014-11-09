@@ -1,32 +1,74 @@
 
+// colours
+@blue:        #459ba8;
+@dark-green:  #00A388;
+@green:       #c5d647;
+@gray-light:  #cecece;
+@gray-mid:    #5b5b5b;
+@light-blue:  #78c5d6;
+@orange:      #f28c33;
+@orange-dark: #FF5E38;
+@pink:        #e868a2;
+@purple:      #bf62a6;
+@red:         #B9121B;
+@white:       #ffffff;
+@yellow:      #f5d63d;
 
-// colours for the menu
-@light-blue: #78c5d6;
-@blue:       #459ba8;
-@dark-green: #79c267;
-@green:      #c5d647;
-@yellow:     #f5d63d;
-@orange:     #f28c33;
-@pink:       #e868a2;
-@purple:     #bf62a6;
-@white:      #ffffff;
-@gray-light: #cecece;
-@gray-mid:   #5b5b5b;
+@transparent-icon-menu-bg:             rgba(0, 0, 0, 0.2);
+@transparent-icon-menu-font-colour:    rgba(0, 0, 0, 0.6);
 
-@header-logo-bg:    @gray-dark;
-@header-user-bg:    darken(@gray-lighter, 10%);
-@aside:          @gray-darker;
-@body-bg:        @gray-lighter;
-@body-text:      @gray-mid;
-@body-text-size: 13px;
 
-@aside-width:    250px;
+//colours in meaninful variables
 
-@text-panel-company:   @white;
+@header-user-bg:       @dark-green;
+@header-logo-bg:       darken(@header-user-bg, 10%);
+@header-text-colour:   @white;
+
+@aside:                @gray-darker;
 @link-aside:           @white;
 @text-aside:           @white;
 
-@raleway: 'Raleway', sans-serif;
+@footer-copyright-bg:  darken(@gray-lighter, 10%);
+@footer-aside-bg:      darken(@aside, 10%);
+
+@body-bg:              url("../images/layout/bg.png") @gray-lighter;
+@body-text:            @gray-mid;
+
+@url-panel-company:    @white;
+@text-panel-company:   @white;
+@bg-panel-company:     @orange-dark;
+
 
 // sizes
 @height-dashboard-panel-first-row:    200px; 
+@body-text-size:                      13px;
+@aside-width:                         250px;
+
+
+//fonts
+@raleway:              'Raleway', sans-serif;
+
+//border 
+@border-radious:        2px;
+
+//alerts
+@alert-success-bg:      @white;
+@alert-success-border:  @dark-green; 
+@alert-success-text:    @body-text;
+
+@alert-info-bg:         @white; 
+@alert-info-border:     @blue; 
+@alert-info-text:       @body-text;
+
+@alert-warning-bg:      @white; 
+@alert-warning-border:  @orange; 
+@alert-warning-text:    @body-text;
+
+@alert-danger-bg:       @white; 
+@alert-danger-border:   @red; 
+@alert-danger-text:     @body-text;
+
+//panels
+@panel-shadow:                 @gray-light;
+@logo-company-border-colour:   rgba(255, 255, 255, 0.3);
+@logo-company-border-size:     7px;

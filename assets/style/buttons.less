@@ -1,13 +1,12 @@
 .edit-buttons {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 6px 10px;
+  background: @transparent-icon-menu-bg;
+  border-radius: @border-radious;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 6px;
+  top: 6px;
   z-index: 100;
   .fa, a {
-  	color: rgba(0, 0, 0, 0.6);
+  	color: @transparent-icon-menu-font-colour;
   	cursor: pointer;
   }
   .fa:hover, a:hover {
@@ -16,4 +15,7 @@
   .fa:last-of-type {
   	margin-right: 0
   }
+}
+.btn {
+  border-radius: @border-radious;
 }
