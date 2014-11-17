@@ -18,36 +18,63 @@
   position: relative;
   .panel-body {
     color: @text-panel-company;
-  }
-  a {
-    color: @text-panel-company;
-  }
-  ul {
-    padding: 0; 
-    li {
-      list-style: none;
-      margin-bottom: 7px
+    padding: 0;
+    position: relative;
+    .row {
+      margin: 0;
     }
-  }
-  .fa {
-    margin-right: 10px
-  }
-  h4 {
-    background: @url-panel-company;
-    border-radius: @border-radious;
-    color: @body-text;
-    display: inline-block;
-    padding: 7px 13px;
-    margin-bottom: 10px;
     a {
-      color: @body-text;
+      color: @text-panel-company;
+    }
+    ul {
+      padding: 0; 
+      li {
+        list-style: none;
+        margin-bottom: 7px
+      }
+    }
+    .fa {
+      margin-right: 10px
+    }
+    h2 {
+      padding-top: 1.5em;
+      padding-bottom: 0.3em;
+      @media (max-width: @screen-xs-max) {
+        padding-top: 0.3em;
+      }
+      a, i {
+        color: @url-panel-company;
+        text-decoration: none;
+        @media (max-width: @screen-xs-max) {
+          color: @text-panel-company;
+        }
+      }
+    }
+    .logo {
+      width: 150px;
+      height: 150px;
+      margin-top: 15px;
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .panel-company-bg {
+      background: @top-bg-panel-company;
+      background-size: cover;
+      left: 0px;
+      min-height: @height-dashboard-panel-first-row / 2;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: 1;
+    }
+    .panel-company-container {
+      z-index: 10;
+      position: relative;
     }
   }
-  .circle {
-    width: 120px;
-    height: 120px;
-    margin-top: 15px;
-  }
+  
 }
 
 
