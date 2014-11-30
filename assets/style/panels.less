@@ -92,3 +92,30 @@
     }
   }
 }
+
+.panel-overview {
+  .panel;
+  .panel-default;
+  .fa {
+    color: @overview-icon-color;
+    border-radius: 100%;
+    padding: 0.4em 0.3em 0em 0.3em ;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    .fa-2x;
+    &.times-visited {
+      background: @overview-icon-times-contacted-bg;
+    }
+    &.visits {
+      background: @overview-icon-visits-bg;
+    }
+    &.new-articles {
+      background: @overview-icon-new-articles-bg;
+    }
+    &.popular-article {
+      background: @overview-icon-popular-article-bg;
+    }
+  }
+  
+}
