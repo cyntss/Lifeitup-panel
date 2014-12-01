@@ -4,3 +4,34 @@
 .border-transparent {
   border: @logo-company-border-size solid @logo-company-border-colour;
 }
+
+ul.display-list {
+  li {
+    border-bottom: @ul-display-list-border-bottom;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    a {
+      width: 100%;
+      display: block;
+      text-decoration: none;
+    }
+    a:hover {
+      background: @ul-display-list-background-hover;
+    }
+    figure {
+      width: 100%;
+      img, figcaption {
+        display: inline-block;
+        vertical-align: top;
+      }
+      img {
+        width: @display-list-size-width;
+        border-radius: @border-radious;
+      }
+      figcaption {
+        padding-left: 1em;
+      }
+    }
+  }
+}
+

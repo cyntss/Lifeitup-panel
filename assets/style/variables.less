@@ -17,10 +17,12 @@
 @transparent-icon-menu-bg:             rgba(0, 0, 0, 0.2);
 @transparent-icon-menu-font-colour:    rgba(0, 0, 0, 0.6);
 
+@primary-colour: @dark-green;
+
 
 //colours in meaninful variables
 
-@header-user-bg:       @dark-green;
+@header-user-bg:       @primary-colour;
 @header-logo-bg:       darken(@header-user-bg, 10%);
 @header-text-colour:   @white;
 
@@ -78,6 +80,7 @@
 //image
 
 @image-shadow:                 @gray-light;
+@display-list-size-width:      80px;
 
 
 // overview
@@ -86,4 +89,11 @@
 @overview-icon-visits-bg:               @dark-green;
 @overview-icon-new-articles-bg:         @orange;
 @overview-icon-popular-article-bg:      @purple;
+
+
+// lists
+
+@ul-display-list-border-bottom:       1px dotted @gray-light;
+@ul-display-list-background-hover:    lighten(@gray-light, 15%);
+
 
