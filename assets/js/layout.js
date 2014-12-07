@@ -12,6 +12,12 @@ $(window).on("resize", function() {
 
 });
 
+$(document).bind("DOMSubtreeModified", function() {
+  
+  layout_resizer();
+
+});
+
 function layout_resizer () {;
   var screenHeight   = $(window).height();
   var headerHeight   = $("header").outerHeight();
