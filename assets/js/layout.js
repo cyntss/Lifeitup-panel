@@ -47,3 +47,11 @@ function layout_resizer () {;
 
 }
 
+
+// init popovers
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+
