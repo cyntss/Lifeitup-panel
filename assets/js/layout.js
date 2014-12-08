@@ -12,6 +12,12 @@ $(window).on("resize", function() {
 
 });
 
+$(document).bind("DOMSubtreeModified", function() {
+  
+  layout_resizer();
+
+});
+
 function layout_resizer () {;
   var screenHeight   = $(window).height();
   var headerHeight   = $("header").outerHeight();
@@ -40,4 +46,12 @@ function layout_resizer () {;
   }
 
 }
+
+
+// init popovers
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 
