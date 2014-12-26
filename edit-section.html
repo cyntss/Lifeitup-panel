@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Edit a section
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <col class="col-60">
+              <col class="col-10">
+              <col class="col-10">
+              <col class="col-10">
+              <col class="col-10">
+              <thead>
+                <tr>
+                  <th>Section name</th>
+                  <th>View online</th>
+                  <th>Hide/Show</th>
+                  <th>Remove</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>90's video games</td>
+                  <td>
+                    <a href="#" class="btn btn-default" target="_blank">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="This section is VISIBLE" >
+                      <i class="fa fa-toggle-on fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default">
+                      <i class="fa fa-trash fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-primary">
+                      <i class="fa fa-pencil fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>90's video games</td>
+                  <td>
+                    <a href="#" class="btn btn-default" target="_blank">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="This section is HIDDEN">
+                      <i class="fa fa-toggle-off fa-lg text-muted"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default">
+                      <i class="fa fa-trash fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-primary">
+                      <i class="fa fa-pencil fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>90's video games</td>
+                  <td>
+                    <a href="#" class="btn btn-default" target="_blank">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="This section is VISIBLE">
+                      <i class="fa fa-toggle-on fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-default">
+                      <i class="fa fa-trash fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-primary">
+                      <i class="fa fa-pencil fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>

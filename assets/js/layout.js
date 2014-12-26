@@ -54,4 +54,10 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
+// init tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 
