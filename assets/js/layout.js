@@ -52,6 +52,13 @@ function layout_resizer () {;
 
 $(function () {
   $('[data-toggle="popover"]').popover()
+  // to destroy the popovers that are hidden
+  $('[data-toggle="popover"]').on('hidden.bs.popover', function () {
+    var popover = $('.popover').not('.in');
+    if (popover) {
+      popover.remove();
+    }
+  })
 })
 
 // init tooltip
