@@ -3,12 +3,15 @@
 $(window).on("load", function() {
   
   layout_resizer ();
+  add_view_image_icon ();
+  resize_view_image_icon ();
 
 });
 
 $(window).on("resize", function() {
 
   layout_resizer();
+  resize_view_image_icon ();
 
 });
 
@@ -18,7 +21,7 @@ $(document).bind("DOMSubtreeModified", function() {
 
 });
 
-function layout_resizer () {;
+function layout_resizer () {
   var screenHeight   = $(window).height();
   var headerHeight   = $("header").outerHeight();
   var footerHeight   = $("footer").outerHeight();
@@ -47,7 +50,7 @@ function layout_resizer () {;
 
 }
 
-
+// BOOTSTRAP INITS
 // init popovers
 
 $(function () {
@@ -68,3 +71,18 @@ $(function () {
 })
 
 
+// View image
+function add_view_image_icon () {
+  $(".view-img-link").append("<div class='view-img'><i class='fa fa-external-link-square fa-3x fa-inverse'></i></div>")
+}
+
+function resize_view_image_icon () {
+  var imageHeight   = $(".view-img-link").children("img").height()
+  var imageWitdh    = $(".view-img-link").children("img").width()
+  var paddingVertical = (imageHeight - 44) / 2
+  $(".view-img").css({
+    height : imageHeight,
+    width : imageWitdh,
+    "padding-top" : paddingVertical
+  })
+}

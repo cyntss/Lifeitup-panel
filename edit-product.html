@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Edit a Product
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Section where the product is located:
+                <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Select the section the product belongs to in order to see all of the products you have created.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+                <select class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Select the section the product belongs to in order to see all of the products you have created.">
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Products found:
+              </label>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-products">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank" class="view-img-link">
+                              <img src="assets\images\demo\001.jpg">
+                            </a>
+                          </div>
+                          <div class="col-lg-7">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank">
+                              <h6>Mario bros - Oops, that bullet is coming over!</h6>
+                            </a>
+                            <div class="btn-group">
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Disable">
+                                <i class="fa fa-toggle-on"></i>
+                              </a>
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Remove">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                              <a href="" class="btn btn-primary" data-toggle="tooltip" title="Edit">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-products product-disabled">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank" class="view-img-link">
+                              <img src="assets\images\demo\002.jpg">
+                            </a>
+                          </div>
+                          <div class="col-lg-7">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank">
+                              <h6>Ceiling lamp Mario Bros question mark box</h6>
+                            </a>
+                            <div class="btn-group">
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Enable">
+                                <i class="fa fa-toggle-off"></i>
+                              </a>
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Remove">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                              <a href="" class="btn btn-primary" data-toggle="tooltip" title="Edit">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-products">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank" class="view-img-link">
+                              <img src="assets\images\demo\003.jpg">
+                            </a>
+                          </div>
+                          <div class="col-lg-7">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank">
+                              <h6>Mario Bros. is a platform game published and developed for arcades by Nintendo in 1983</h6>
+                            </a>
+                            <div class="btn-group">
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Disable">
+                                <i class="fa fa-toggle-on"></i>
+                              </a>
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Remove">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                              <a href="" class="btn btn-primary" data-toggle="tooltip" title="Edit">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-products">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank" class="view-img-link">
+                              <img src="assets\images\demo\004.jpg">
+                            </a>
+                          </div>
+                          <div class="col-lg-7">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank">
+                              <h6>New Super Mario Bros. DS - All 18 Secret Exit Locations</h6>
+                            </a>
+                            <div class="btn-group">
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Disable">
+                                <i class="fa fa-toggle-on"></i>
+                              </a>
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Remove">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                              <a href="" class="btn btn-primary" data-toggle="tooltip" title="Edit">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default panel-products">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank" class="view-img-link">
+                              <img src="assets\images\demo\005.jpg">
+                            </a>
+                          </div>
+                          <div class="col-lg-7">
+                            <a href="http://cyntss.github.io/Parallax-img-scroll/" target="_blank">
+                              <h6>New Super Mario Bros. Wii - All Boss Fights</h6>
+                            </a>
+                            <div class="btn-group">
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Disable">
+                                <i class="fa fa-toggle-on"></i>
+                              </a>
+                              <a href="" class="btn btn-default" data-toggle="tooltip" title="Remove">
+                                <i class="fa fa-trash"></i>
+                              </a>
+                              <a href="" class="btn btn-primary" data-toggle="tooltip" title="Edit">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>
