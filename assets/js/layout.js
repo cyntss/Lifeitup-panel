@@ -16,10 +16,17 @@ $(window).on("resize", function() {
 });
 
 $(document).bind("DOMSubtreeModified", function() {
-  
+
   layout_resizer();
 
 });
+
+// triger the function to resize and to get the images size when a panel has been displayed
+$(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function () {
+  layout_resizer();
+  resize_view_image_icon();
+})
+
 
 function layout_resizer () {
   var screenHeight   = $(window).height();
@@ -77,12 +84,16 @@ function add_view_image_icon () {
 }
 
 function resize_view_image_icon () {
-  var imageHeight   = $(".view-img-link").children("img").height()
-  var imageWitdh    = $(".view-img-link").children("img").width()
-  var paddingVertical = (imageHeight - 44) / 2
-  $(".view-img").css({
-    height : imageHeight,
-    width : imageWitdh,
-    "padding-top" : paddingVertical
+  $(".view-img-link").each(function() {
+    var imageHeight   = $(this).children("img").height()
+    var imageWitdh    = $(this).children("img").width()
+    var paddingVertical = (imageHeight - 44) / 2
+    $(this).children(".view-img").css({
+      height : imageHeight,
+      width : imageWitdh,
+      "padding-top" : paddingVertical
+    })
   })
+  
 }
+
