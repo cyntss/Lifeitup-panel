@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Change your password
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Username:
+                <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Enter the user name you currently use to access the panel.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+                <input type="text" name="username" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Enter the user name you currently use to access the panel." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Current password:
+              </label>
+              <div class="col-md-7">
+                <input type="password" name="current-password" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                New password:
+              </label>
+              <div class="col-md-7">
+                <input type="password" name="new-password" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Repeat the new password:
+              </label>
+              <div class="col-md-7">
+                <input type="password" name="repeat-new-password" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Cypressy code (*):
+              </label>
+              <div class="col-md-7">
+                <input type="text" name="cypressy-code" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-7">
+                <small>(*) This code was provided to you in a PDF together to your initial username and password.</small>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-7">
+                <a href="index.html" class="btn btn-default">
+                  <i class="fa fa-close"></i>
+                  Cancel
+                </a>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-check"></i>
+                  Save
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>
