@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+    $(document).on("ready", function(){
+      var rndNum = Math.floor((Math.random() * 2)+1); 
+      $("body").css({
+          "background-image": "url(assets/images/layout/wallpaper-0" + rndNum + ".jpg)",
+          "background-repeat" : "no-repeat",
+          "background-size" : "cover"
+      }).hide().fadeIn(1000);
+    })
+  </script>
+</head>
+<body class="login">
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- SECTION -->
+    <section class="row-0">
+      <div class="center-panel">
+        <div class="col-md-4 col-sm-2 col-xs-1"></div>
+        <div class="col-md-4 col-sm-8 col-xs-10 text-center">
+          <div class="alert alert-info alert-dismissible fade in">
+            <div class="row">
+              <div class="col-sm-1 alert-icon">
+                <i class="fa fa-info-circle fa-3x"></i>
+              </div>
+              <div class="col-sm-11">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                The Username or Password were not accepted, please try again.
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/user-profile/avatar-lg.jpg" class="circle login-picture border-transparent" />
+          <form>
+            <input class="form-control input-lg" name="username" placeholder="Username" type="text" />
+            <input class="form-control input-lg" name="password" placeholder="Password" type="text" />
+            <button class="btn btn-primary btn-block btn-lg" type="submit">
+              <i class="fa fa-check"></i>
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="row-0">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+        <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
