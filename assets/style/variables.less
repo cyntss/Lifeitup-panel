@@ -41,9 +41,12 @@
 @bg-panel-company:     @white;
 @top-bg-panel-company: url('../images/layout/company-panel-bg.jpg');
 
-@add-more-media-border-colour:     @gray-mid;
-@add-more-media-background: @gray-light;
-@add-more-media-color:      @gray-mid;
+@add-more-media-border-colour:        lighten(@gray-mid, 40%);
+@add-more-media-border-colour-hover:  lighten(@gray-mid, 30%);
+@add-more-media-background:           lighten(@gray-light, 10%);
+@add-more-media-background-hover:     lighten(@gray-light, 6%);
+@add-more-media-color:                lighten(@gray-mid, 25%);
+@add-more-media-color-hover:          lighten(@gray-mid, 20%);
 
 
 //sizes
@@ -57,8 +60,9 @@
 @raleway:              'Raleway', sans-serif;
 
 //border 
-@border-radious:           2px;
-@add-more-media-border:    1px solid @add-more-media-border-colour;
+@border-radious:                 2px;
+@add-more-media-border:          1px solid @add-more-media-border-colour;
+@add-more-media-border-hover:    1px solid @add-more-media-border-colour-hover;
 
 //alerts
 @alert-success-bg:      @white;

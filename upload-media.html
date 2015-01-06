@@ -50,69 +50,74 @@
           Change your password
         </div>
         <div class="panel-body">
-          <form class="form-horizontal" role="form">
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                Username:
-                <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Enter the user name you currently use to access the panel.">
-                  <i class="fa fa-info-circle text-info" ></i>
-                </a>
-              </label>
-              <div class="col-md-7">
-                <input type="text" name="username" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="Enter the user name you currently use to access the panel." />
+          <div class="row" role="tablist">
+            <div class="col-sm-6">
+              <a href="#photo" class="btn btn-primary btn-lg btn-block" data-toggle="tab">
+                Add pictures
+                <i class="fa fa-file-image-o"></i>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="#video" class="btn btn-primary btn-lg btn-block" data-toggle="tab">
+                Add a Youtube video
+                <i class="fa fa-youtube-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="photo" role="tabpanel" class="tab-pane fade">
+              <hr/>
+              <p>Please, select the pictures you want to upload to the selected product. The allowed formats are: .jpg, .gif, .png.</p>
+              <div class="row">
+                <div class="col-sm-2 hidden-xs text-right">
+                  <i class="fa fa-file-image-o fa-5x"></i>
+                </div>
+                <div class="col-sm-10 col-md-5">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-check"></i>
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                Current password:
-              </label>
-              <div class="col-md-7">
-                <input type="password" name="current-password" class="form-control" />
+            <div id="video" role="tabpanel" class="tab-pane fade">
+              <hr/>
+              <p>Upload a Youtube video to the selected product.<strong>E.g: http://www.youtube.com/watch?v=df-eLzao63I.</strong></p>
+              <div class="row">
+                <div class="col-sm-2 hidden-xs text-right">
+                  <i class="fa fa-youtube-square fa-5x"></i>
+                </div>
+                <div class="col-sm-10 col-md-5">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="text" name="youtube_video" class="form-control" placeholder="Youtube video URL" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-check"></i>
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                New password:
-              </label>
-              <div class="col-md-7">
-                <input type="password" name="new-password" class="form-control" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                Repeat the new password:
-              </label>
-              <div class="col-md-7">
-                <input type="password" name="repeat-new-password" class="form-control" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                Cypressy code (*):
-              </label>
-              <div class="col-md-7">
-                <input type="text" name="cypressy-code" class="form-control" />
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-offset-2 col-md-7">
-                <small>(*) This code was provided to you in a PDF together to your initial username and password.</small>
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <div class="col-md-offset-2 col-md-7">
-                <a href="index.html" class="btn btn-default">
-                  <i class="fa fa-close"></i>
-                  Cancel
-                </a>
-                <button type="submit" class="btn btn-primary">
-                  <i class="fa fa-check"></i>
-                  Save
-                </button>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -123,7 +128,6 @@
       <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
       <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
     </div>
-    
   </footer>
 </body>
 </html>
