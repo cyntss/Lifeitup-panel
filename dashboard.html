@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="alert alert-info alert-dismissible fade in">
+        <div class="row">
+          <div class="col-sm-1 alert-icon">
+            <i class="fa fa-info-circle fa-3x"></i>
+          </div>
+          <div class="col-sm-11">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Let me present you the new <strong>Life II UP Admin Panel</strong>. An open source front-end UI created using Bootstrap 3.0, much Javascript, outstanding well organized LESS and HTML5.
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning alert-dismissible fade in">
+        <div class="row">
+          <div class="col-sm-1 alert-icon">
+            <i class="fa fa-warning fa-3x"></i>
+          </div>
+          <div class="col-sm-11">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Let me present you the new <strong>Life II UP Admin Panel</strong>. An open source front-end UI created using Bootstrap 3.0, much Javascript, outstanding well organized LESS and HTML5.
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger alert-dismissible fade in">
+        <div class="row">
+          <div class="col-sm-1 alert-icon">
+            <i class="fa fa-exclamation-circle fa-3x"></i>
+          </div>
+          <div class="col-sm-11">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Let me present you the new <strong>Life II UP Admin Panel</strong>. An open source front-end UI created using Bootstrap 3.0, much Javascript, outstanding well organized LESS and HTML5.
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-success alert-dismissible fade in">
+        <div class="row">
+          <div class="col-sm-1 alert-icon">
+            <i class="fa fa-check-circle fa-3x"></i>
+          </div>
+          <div class="col-sm-11">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Let me present you the new <strong>Life II UP Admin Panel</strong>. An open source front-end UI created using Bootstrap 3.0, much Javascript, outstanding well organized LESS and HTML5.
+          </div>
+        </div>
+      </div>
+      
+      <div class="row"> 
+        <div class="col-md-9">
+          <div class="panel-company">
+            <div class="panel-body">
+              <div class="edit-buttons">
+                <a href="update-contact-information.html" class="btn btn-link"><i class="fa fa-pencil"></i></a>
+              </div>
+              <div class="panel-company-bg">
+              </div>
+              <div class="panel-company-container">
+                <div class="row">
+                  <div class="col-sm-3 text-center">
+                    <img src="assets/images/user-profile/avatar-lg.jpg" class="circle logo border-transparent shadow-box" />
+                  </div>
+                  <div class="col-sm-9">
+                    <h2><i class="fa fa-globe"></i><a href="#">www.cypressy.com</a></h2>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul>
+                          <li><i class="fa fa-phone"></i><strong>Phone:</strong> 100 999 7726</li>  
+                          <li><i class="fa fa-at"></i><strong>E-mail:</strong> clientes@cypressy.com</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6">
+                        <ul>
+                          <li><i class="fa fa-home"></i><strong>Address:</strong> Street address – Nuremberg, Germany</li>
+                          <li><i class="fa fa-inbox"></i><strong>Opening times:</strong> 8 - 20 hs</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel-last-login">
+            <div class="panel-heading">
+              Last time you logged in: 
+            </div>
+            <div class="panel-body text-center">
+              <i class="fa fa-calendar fa-2x"></i>
+              <p>12/10/2014 02:40:59 p.m.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="panel-overview">  
+            <div class="panel-heading">
+              Times contacted this month
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-3 col-xs-hidden">
+                  <i class="fa fa-envelope times-visited"></i>
+                </div>
+                <div class="col-sm-9">
+                  <span class="fa-3x">60</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="panel-overview">  
+            <div class="panel-heading">
+              Visits received this month
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-3 col-xs-hidden">
+                  <i class="fa fa-user visits"></i>
+                </div>
+                <div class="col-sm-9">
+                  <span class="fa-3x">400</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="panel-overview">  
+            <div class="panel-heading">
+              New articles this month
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-3 col-xs-hidden">
+                  <i class="fa fa-file-text-o new-articles"></i>
+                </div>
+                <div class="col-sm-9">
+                  <span class="fa-3x">87</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="panel-overview">  
+            <div class="panel-heading">
+              Popular article of this month
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-3 col-hidden-xs">
+                  <i class="fa fa-trophy popular-article"></i>
+                </div>
+                <div class="col-sm-9">
+                  <h5>The Hobbit: The Battle of the Five Armies</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Last articles created
+            </div>
+            <div class="panel-body">
+              <ul class="list-no-style display-list">
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="assets/images/articles/01.jpg" />
+                      <figcaption>
+                        <h4>Mario rules the castle</h4>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="assets/images/articles/02.jpg" />
+                      <figcaption>
+                        <h4>Hit me baby one more time</h4>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="assets/images/articles/03.jpg" />
+                      <figcaption>
+                        <h4>Life Up</h4>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="assets/images/articles/04.jpg" />
+                      <figcaption>
+                        <h4>Grow up and get a life Tshirt</h4>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="assets/images/articles/05.jpg" />
+                      <figcaption>
+                        <h4>Grow up background</h4>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Recent activities
+            </div>
+            <div class="panel-body table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="fa fa-user text-primary"></i> Admin
+                    </td>
+                    <td>
+                      New article created
+                    </td>
+                    <td>
+                      10/12/2014
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-user text-primary"></i> Admin
+                    </td>
+                    <td>
+                      New article created
+                    </td>
+                    <td>
+                      10/12/2014
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-user text-primary"></i> Admin
+                    </td>
+                    <td>
+                      New article created
+                    </td>
+                    <td>
+                      10/12/2014
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>
