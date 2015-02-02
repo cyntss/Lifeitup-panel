@@ -1,0 +1,106 @@
+<%
+If Session("VWYQ6HTFJC")<>"GLC3MNVSZK" then
+  Response.Redirect("index.asp?error=ok")
+end if
+
+Set conexion = Server.CreateObject("ADODB.Connection")
+conexion.Open Application("conexion")
+
+set currencies=conexion.execute("select * from currency order by id_currency asc")
+%>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet" type="text/css" href="assets/style/lifeitup.css" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <!--#include file="head.asp"-->
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <%
+      if Request.QueryString("elim")="yes" then
+      %>
+      <div class="alert alert-danger alert-dismissible fade in">
+        <div class="row">
+          <div class="col-sm-1 alert-icon">
+            <i class="fa fa-exclamation-circle fa-3x"></i>
+          </div>
+          <div class="col-sm-11">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            Está seguro que desea eliminar esta moneda? Recuerde que no podrá recuperar los datos luego de eliminada
+            <a href="eliminacurrency.asp?idcur=<%=Request.QueryString("idcur")%>" class="btn btn-primary">Eliminar </a> <a href="changein.asp" class="btn btn-default">Cancelar</a>
+          </div>
+        </div>
+      </div>
+      <%end if%>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Edit a section
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <col class="col-60">
+              <col class="col-20">
+              <col class="col-20">
+              <thead>
+                <tr>
+                  <th>Moneda = Valor</th>
+                  <th>Eliminar</th>
+                  <th>Editar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%
+                do while currencies.EOF<>true
+                %>
+                <tr>
+                  <td><%=UCase(currencies("name"))%>$ = $<%=formatNumber(currencies("value"))%></td>
+                  <td>
+                    <a href="change-currency.asp?idcur=<%=currencies("id_currency")%>&elim=yes" class="btn btn-default">
+                      <i class="fa fa-trash fa-lg"></i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="updatecurrency.asp?idcur=<%=currencies("id_currency")%>" class="btn btn-primary">
+                      <i class="fa fa-pencil fa-lg"></i>
+                    </a>
+                  </td>
+                </tr>
+                <%
+                currencies.MoveNext
+                loop
+                %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--#include file="footer.asp"-->
+</body>
+</html>
