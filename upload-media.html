@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Change your password
+        </div>
+        <div class="panel-body">
+          <div class="row" role="tablist">
+            <div class="col-sm-6">
+              <a href="#photo" class="btn btn-primary btn-lg btn-block" data-toggle="tab">
+                Add pictures
+                <i class="fa fa-file-image-o"></i>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="#video" class="btn btn-primary btn-lg btn-block" data-toggle="tab">
+                Add a Youtube video
+                <i class="fa fa-youtube-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="photo" role="tabpanel" class="tab-pane fade">
+              <hr/>
+              <p>Please, select the pictures you want to upload to the selected product. The allowed formats are: .jpg, .gif, .png.</p>
+              <div class="row">
+                <div class="col-sm-2 hidden-xs text-right">
+                  <i class="fa fa-file-image-o fa-5x"></i>
+                </div>
+                <div class="col-sm-10 col-md-5">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-check"></i>
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="video" role="tabpanel" class="tab-pane fade">
+              <hr/>
+              <p>Upload a Youtube video to the selected product.<strong>E.g: http://www.youtube.com/watch?v=df-eLzao63I.</strong></p>
+              <div class="row">
+                <div class="col-sm-2 hidden-xs text-right">
+                  <i class="fa fa-youtube-square fa-5x"></i>
+                </div>
+                <div class="col-sm-10 col-md-5">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="text" name="youtube_video" class="form-control" placeholder="Youtube video URL" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-check"></i>
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+  </footer>
+</body>
+</html>

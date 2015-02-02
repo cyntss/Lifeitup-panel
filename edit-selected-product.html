@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LifeItUp Web Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Stylesheets files -->
+  <link rel="stylesheet/less" type="text/css" href="assets/style/lifeitup.less" />
+  <!-- JS files -->
+  <script type="text/javascript" src="assets/js/less.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- This file only -->
+  <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+  <script>tinymce.init({
+    selector:'textarea', 
+    height : 250, 
+    plugins: "code"
+  });</script>
+  <script type="text/javascript" src="assets/js/responsive-tab.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-header col-xs-12">
+      <a href="index.asp">
+        <img src="assets/images/layout/logo.png">
+      </a>
+    </div>
+    <div class="pull-right user-header">
+      <div class="hidden-xs">
+        <img src="assets/images/user-profile/demo-user.jpg">
+        Welcome <span class="username">Cynthia Sanchez</span>
+      </div>
+      <a href="" class="btn btn-default">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </header>
+  <!-- BODY -->
+  <div class="container-fluid">
+    <!-- MENU: the content of this tag (aside.html) is being loaded with Jquery from the document 'layout-html-include.js' -->
+    <aside>
+    </aside>
+    <!-- SECTION -->
+    <section>
+      <div class="responsive-wizard" role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#information" aria-controls="information" role="tab" data-toggle="tab">
+              Product Information
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#pictures" aria-controls="pictures" role="tab" data-toggle="tab">
+              Pictures
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#videos" aria-controls="videos" role="tab" data-toggle="tab">
+              Videos
+            </a>
+          </li>
+        </ul>
+        <div class="panel panel-default">
+          <div class="panel-body tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="information">
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label class="control-label col-md-2">
+                    Product's Section:
+                    <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Remember" data-content="The section you created are shown in this list and you must select one where the new product will be displayed.">
+                      <i class="fa fa-info-circle text-info" ></i>
+                    </a>
+                  </label>
+                  <div class="col-md-7">
+                    <select class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Remember" data-content="The section you created are shown in this list and you must select one where the new product will be displayed.">
+                      <option>Category 1</option>
+                      <option>Category 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-2">
+                    Product's Name:
+                    <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
+                      <i class="fa fa-info-circle text-info" ></i>
+                    </a>
+                  </label>
+                  <div class="col-md-7">
+                    <input type="text" name="name" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-2">
+                    Description:
+                    <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Describe the product you are selling/offering to your users. Be descriptive and try to repeat the 'keywords' used in the title in order to help title be more redundant to Google.">
+                      <i class="fa fa-info-circle text-info" ></i>
+                    </a>
+                  </label>
+                  <div class="col-md-7">
+                    <textarea name="description"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-2">
+                    Product's Price:
+                    <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Only if needed" data-content="If you dont want to show a price to your customers just leave this information empty and no price will be shown.">
+                      <i class="fa fa-info-circle text-info" ></i>
+                    </a>
+                  </label>
+                  <div class="col-md-7">
+                    <div class="input-group">
+                      <div class="input-group-addon">$</div>
+                      <input type="number" name="price" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Only if needed" data-content="If you dont want to show a price to your customers just leave this information empty and no price will be shown.">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-offset-2 col-md-7">
+                    <a href="index.html" class="btn btn-default">
+                      <i class="fa fa-close"></i>
+                      Cancel
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-check"></i>
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="pictures">
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\001.jpg">
+                </a>
+              </figure>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\002.jpg">
+                </a>
+              </figure>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\003.jpg">
+                </a>
+              </figure>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\004.jpg">
+                </a>
+              </figure>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\005.jpg">
+                </a>
+              </figure>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-star-o"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\007.jpg">
+                </a>
+              </figure>
+
+              <a href="upload-media.html" class="add-more" data-toggle="tooltip" title="Add a more pictures">
+                <i class="fa fa-plus-square fa-3x"></i>
+              </a>
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="videos">
+              <div class="alert alert-info alert-dismissible fade in">
+                <div class="row">
+                  <div class="col-sm-1 alert-icon">
+                    <i class="fa fa-info-circle fa-3x"></i>
+                  </div>
+                  <div class="col-sm-11">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    You have no items in this section.
+                  </div>
+                </div>
+              </div>
+              <figure>
+                <div class="edit-buttons">
+                  <a href="#" class="btn btn-link">
+                    <i class="fa fa-trash"></i>
+                  </a>
+                </div>
+                <a href="assets\images\demo\001.jpg" class="view-img-link" target="_blank">
+                  <img src="assets\images\demo\001.jpg">
+                </a>
+              </figure>
+              <a href="upload-media.html" class="add-more" data-toggle="tooltip" title="Add a more pictures">
+                <i class="fa fa-plus-square fa-3x"></i>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
+      <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>

@@ -19,13 +19,6 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
-  <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-  <script>tinymce.init({
-    selector:'textarea', 
-    height : 250, 
-    plugins: "code",
-    plugins: "image"
-  });</script>
 </head>
 <body>
   <!-- HEADER -->
@@ -54,32 +47,43 @@
     <section>
       <div class="panel panel-default">
         <div class="panel-heading">
-          Create a new Section
+          Update your contact information
         </div>
         <div class="panel-body">
           <form class="form-horizontal" role="form">
             <div class="form-group">
               <label class="control-label col-md-2">
-                Section's Title:
-                <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
-                  <i class="fa fa-info-circle text-info" ></i>
-                </a>
+                Phone:
               </label>
               <div class="col-md-7">
-                <input type="text" name="title" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
+                <input type="tel" name="phone" class="form-control" />
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-md-2">
-                Information:
-                <a href="#" class="visible-sm-inline visible-xs-inline" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Complete the information that will be shown on this section for your users.">
-                  <i class="fa fa-info-circle text-info" ></i>
-                </a>
+                E-mail:
               </label>
               <div class="col-md-7">
-                <textarea name="information"></textarea>
+                <input type="email" name="email" class="form-control" />
               </div>
             </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Address:
+              </label>
+              <div class="col-md-7">
+                <input type="text" name="address" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Opening times:
+              </label>
+              <div class="col-md-7">
+                <input type="text" name="times" class="form-control" />
+              </div>
+            </div>
+            
             <div class="form-group">
               <div class="col-md-offset-2 col-md-7">
                 <a href="index.html" class="btn btn-default">
