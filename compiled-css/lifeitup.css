@@ -8134,6 +8134,7 @@ figure img {
 }
 figure .edit-buttons .fa-star {
   color: #f5a763;
+  padding: 6px 12px;
 }
 .login-picture {
   margin: 1em 0;
