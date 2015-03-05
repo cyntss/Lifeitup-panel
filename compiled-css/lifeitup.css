@@ -8946,3 +8946,6 @@ a.add-more:hover {
   border: 1px solid #a8a8a8;
   color: #8e8e8e;
 }
+a[tabindex="0"] {
+  cursor: pointer;
+}
