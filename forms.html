@@ -9,9 +9,9 @@
   <!-- JS files -->
   <script type="text/javascript" src="assets/js/less.js"></script>
   <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script type="text/javascript" src="assets/js/layout.js"></script>
+  <script type="text/javascript" src="assets/js/lifeitup_layout.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.js"></script>
-  <script type="text/javascript" src="assets/js/layout-html-include.js"></script>
+  <script type="text/javascript" src="assets/js/lifeitup_layout-html-include.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,8 +21,8 @@
   <![endif]-->
   <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
   <script>tinymce.init({
-    selector:'textarea', 
-    height : 250, 
+    selector:'textarea',
+    height : 250,
     plugins: "code",
     plugins: "image"
   });</script>
@@ -30,20 +30,6 @@
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo-header col-xs-12">
-      <a href="index.asp">
-        <img src="assets/images/layout/logo.png">
-      </a>
-    </div>
-    <div class="pull-right user-header">
-      <div class="hidden-xs">
-        <img src="assets/images/user-profile/demo-user.jpg">
-        Welcome <span class="username">Cynthia Sanchez</span>
-      </div>
-      <a href="" class="btn btn-default">
-        <i class="fa fa-sign-out"></i>
-      </a>
-    </div>
   </header>
   <!-- BODY -->
   <div class="container-fluid">
@@ -54,19 +40,62 @@
     <section>
       <div class="panel panel-default">
         <div class="panel-heading">
-          Edit home page
+          Create a new Product
         </div>
         <div class="panel-body">
           <form class="form-horizontal" role="form">
             <div class="form-group">
               <label class="control-label col-md-2">
-                Home page information:
-                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Important!" data-content="Do not modify this content if you dont have HTML knowledge.">
+                Product's Section:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Remember" data-content="The section you created are shown in this list and you must select one where the new product will be displayed.">
                   <i class="fa fa-info-circle text-info" ></i>
                 </a>
               </label>
               <div class="col-md-7">
-                <textarea name="information"></textarea>
+                <select class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Remember" data-content="The section you created are shown in this list and you must select one where the new product will be displayed.">
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Product's Name:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+                <input type="text" name="name" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Titles are important for Google and will be recorded for search results. Try to insert some 'keywords' in your titles in order to improve your visibility in search engines.">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Description:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Describe the product you are selling/offering to your users. Be descriptive and try to repeat the 'keywords' used in the title in order to help title be more redundant to Google.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+<<<<<<< HEAD
+                <textarea name="description" class="form-control" rows="6" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Describe the product you are selling/offering to your users. Be descriptive and try to repeat the 'keywords' used in the title in order to help title be more redundant to Google."></textarea>
+=======
+                <textarea name="description"></textarea>
+>>>>>>> gh-pages
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Product's Price:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Only if needed" data-content="If you dont want to show a price to your customers just leave this information empty and no price will be shown.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input type="number" name="price" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Only if needed" data-content="If you dont want to show a price to your customers just leave this information empty and no price will be shown.">
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -84,18 +113,7 @@
                 <label class="radio-inline">
                   <input name="display-list" value="no" type="radio" data-placement="bottom" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Not recommended" data-content="This will hide the new articles/products you uploaded. Users will need to browse through the rest of sections to find what is new in your website.">
                   No
-                </label>              
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-md-2">
-                Title of "new articles":
-                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Give a title to the list of New Articles of your page (only visible if the option above is enabled.">
-                  <i class="fa fa-info-circle text-info" ></i>
-                </a>
-              </label>
-              <div class="col-md-7">
-                <input name="description" class="form-control" rows="6" data-placement="right" data-container=".form-group" data-toggle="popover" data-trigger="focus" title="What's this?" data-content="Give a title to the list of New Articles of your page (only visible if the option above is enabled." />
+                </label>
               </div>
             </div>
             <div class="form-group">
@@ -116,10 +134,22 @@
             </div>
             <div class="form-group">
               <div class="col-md-offset-2 col-md-7">
+                <small>(*) This code was provided to you in a PDF together to your initial username and password.</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-7">
+<<<<<<< HEAD
+                <button type="reset" class="btn btn-default">
+                  <i class="fa fa-close"></i>
+                  Cancel
+                </button>
+=======
                 <a href="index.html" class="btn btn-default">
                   <i class="fa fa-close"></i>
                   Cancel
                 </a>
+>>>>>>> gh-pages
                 <button type="submit" class="btn btn-primary">
                   <i class="fa fa-check"></i>
                   Save
@@ -137,7 +167,7 @@
       <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
       <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
     </div>
-    
+
   </footer>
 </body>
 </html>

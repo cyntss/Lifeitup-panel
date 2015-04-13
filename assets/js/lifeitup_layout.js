@@ -1,7 +1,7 @@
 // to render the layout correctly in every browser/screen
 
 $(window).on("load", function() {
-  
+
   layout_resizer ();
   add_view_image_icon ();
   resize_view_image_icon ();
@@ -36,7 +36,7 @@ function layout_resizer () {
   var sectionHeight  = $("section").outerHeight();
 
   if ( ( headerHeight + footerHeight + asideHeight ) > screenHeight && asideHeight > sectionHeight ) {
-  
+
     $(".container-fluid").css({
       height : asideHeight + "px"
     });
@@ -94,5 +94,21 @@ function resize_view_image_icon () {
       "padding-top" : paddingVertical
     })
   })
-  
+
 }
+
+
+// Functions for the mobile version
+$(document).on("click", '#open_main_menu', open_mobile_menu);
+var menu_open = false
+function open_mobile_menu () {
+  if (menu_open) {
+    $('aside').css({'margin-left': '-250px'});
+    menu_open = false;
+  } else {
+    $('aside').css({'margin-left': '0px'});
+    menu_open = true
+  }
+}
+
+

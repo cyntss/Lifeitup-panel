@@ -1,8 +1,13 @@
 .alert {
   box-shadow: 0px 3px 0px @panel-shadow;
-  border-radius: @border-radious; 
+  border-radius: @border-radious;
   border-width: 2px;
-  padding: 25px;  
+  &.alert-dismissible {
+    padding: @alert-padding;
+    .close {
+      right: 0
+    }
+  }
 }
 
 .alert-info {
@@ -24,11 +29,6 @@
   .alert-icon {
     color: @alert-warning-border;
   }
-}
-
-.alert-dismissable .close, 
-.alert-dismissible .close {
-  right: -10px;
 }
 
 .login {
