@@ -8949,3 +8949,10 @@ a.add-more:hover {
 a[tabindex="0"] {
   cursor: pointer;
 }
+.label {
+  font-size: 85%;
+}
+.label.checkbox-label {
+  display: inline-block;
+  font-size: 95%;
+}
