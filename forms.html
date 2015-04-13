@@ -23,7 +23,8 @@
   <script>tinymce.init({
     selector:'textarea',
     height : 250,
-    plugins: "code"
+    plugins: "code",
+    plugins: "image"
   });</script>
 </head>
 <body>
@@ -91,6 +92,45 @@
                   <div class="input-group-addon">$</div>
                   <input type="number" name="price" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Only if needed" data-content="If you dont want to show a price to your customers just leave this information empty and no price will be shown.">
                 </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Display new articles:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Some tips" data-content="Activates the listing of newest articles created.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-7">
+                <label class="radio-inline">
+                  <input name="display-list" value="yes" type="radio" data-placement="bottom" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Recommended" data-content="This will activate the list of newest items uploaded in your website. We recommen this action as users will be the lastest products available in your site.">
+                  Yes
+                </label>
+                <label class="radio-inline">
+                  <input name="display-list" value="no" type="radio" data-placement="bottom" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="Not recommended" data-content="This will hide the new articles/products you uploaded. Users will need to browse through the rest of sections to find what is new in your website.">
+                  No
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-2">
+                Quantity of articles to display:
+                <a tabindex="0" class="visible-sm-inline visible-xs-inline" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="This will change the number of items in the list of New Articles displayed in your home page.">
+                  <i class="fa fa-info-circle text-info" ></i>
+                </a>
+              </label>
+              <div class="col-md-2">
+                <select name="quantity-displayed" class="form-control" data-placement="right" data-toggle="popover" data-container=".form-group" data-trigger="focus" title="What's this?" data-content="This will change the number of items in the list of New Articles displayed in your home page.">
+                  <option value="1">2</option>
+                  <option value="2">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-7">
+                <small>(*) This code was provided to you in a PDF together to your initial username and password.</small>
               </div>
             </div>
             <div class="form-group">
