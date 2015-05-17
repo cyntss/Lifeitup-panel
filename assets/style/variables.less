@@ -1,32 +1,43 @@
+//main colours
+//TIP: get your favurite pallet from here: http://coolors.co/app/
+@first-colour:   #F12D60;
+@second-colour: #F2DC5D;
+@third-colour:  #2A2D34;
 
-// colours
+// colours for the general layout
+@gray-light:  #cecece;
+@gray-mid:    #5b5b5b;
+@orange-dark: #FF5E38;
+@red:         #B9121B;
+@white:       #ffffff;
+
+
+// colours for the aside border. This is the order they appear on the List in Aside
+@light-blue:  #78c5d6;
 @blue:        #459ba8;
 @dark-green:  #00A388;
 @green:       #c5d647;
-@gray-light:  #cecece;
-@gray-mid:    #5b5b5b;
-@light-blue:  #78c5d6;
+@yellow:      #f5d63d;
 @orange:      #f28c33;
-@orange-dark: #FF5E38;
 @pink:        #e868a2;
 @purple:      #bf62a6;
-@red:         #B9121B;
-@white:       #ffffff;
-@yellow:      #f5d63d;
 
+// colour for the Edit icon in the companies panel
 @transparent-icon-menu-bg:             rgba(0, 0, 0, 0.4);
 @transparent-icon-menu-font-colour:    rgba(255, 255, 255, 0.9);
 
-@primary-colour: @dark-green;
+//Primary colour: all calls-to-action will use this colour. Usually, you want to use your brand's colour here, which, 
+//should be what you used for the @first-colour variable.
+
+@primary-colour: @first-colour;
 
 
 //colours in meaninful variables
 
-@header-user-bg:       @primary-colour;
-@header-logo-bg:       darken(@header-user-bg, 10%);
-@header-text-colour:   @white;
+@header-text-colour:   @gray-mid;
+@header-user-bg:       @gray-mid;
 
-@aside:                @gray-darker;
+@aside:                @third-colour;
 @link-aside:           @white;
 @text-aside:           @white;
 
@@ -98,14 +109,26 @@
 
 // overview
 @overview-icon-color:                   @white;
-@overview-icon-times-contacted-bg:      @blue;
-@overview-icon-visits-bg:               @dark-green;
-@overview-icon-new-articles-bg:         @orange;
-@overview-icon-popular-article-bg:      @purple;
+@overview-icon-times-contacted-bg:      #F2DC5D;
+@overview-icon-visits-bg:               #E76B74;
+@overview-icon-new-articles-bg:         #3F826D;
+@overview-icon-popular-article-bg:      #9AC4F8;
 
 
 // lists
 
 @ul-display-list-border-bottom:       1px dotted @gray-light;
 @ul-display-list-background-hover:    lighten(@gray-light, 15%);
+
+// Buttons
+
+@btn-primary-color:  @white; 
+@btn-primary-bg:     @primary-colour; 
+@btn-primary-border: @primary-colour;
+
+
+@btn-default-color:  @primary-colour; 
+@btn-default-bg:     transparent; 
+@btn-default-border: @primary-colour;
+
 

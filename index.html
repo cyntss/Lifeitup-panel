@@ -19,16 +19,6 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
-  <script type="text/javascript">
-    $(document).on("ready", function(){
-      var rndNum = Math.floor((Math.random() * 2)+1);
-      $("body").css({
-          "background-image": "url(assets/images/layout/wallpaper-0" + rndNum + ".jpg)",
-          "background-repeat" : "no-repeat",
-          "background-size" : "cover"
-      }).hide().fadeIn(1000);
-    })
-  </script>
 </head>
 <body class="login">
   <!-- BODY -->
@@ -63,12 +53,9 @@
     </section>
   </div>
   <footer>
-    <div class="row-0">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
-        <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
-      </div>
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>Made with <i class="fa fa-heart"></i> by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a> Download from <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank"><i class="fa fa-github"></i></a></p>
     </div>
   </footer>
 </body>
