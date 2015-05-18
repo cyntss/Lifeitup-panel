@@ -9049,6 +9049,10 @@ a[tabindex="0"] {
     line-height: 0.75em;
     vertical-align: -15%;
   }
+  .login-picture {
+    width: 180px;
+    margin: 0 0 3em 0;
+  }
 }
 @media (min-width: 768px) {
   .alert-icon .fa {
