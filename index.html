@@ -19,6 +19,17 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
+  <!-- for animation -->
+  <script type="text/javascript" src="assets/js/wow.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/style/animate/animate.css" />
+  <script type="text/javascript">
+  wow = new WOW(
+    {
+      offset: 50
+    }
+  )
+  wow.init();
+  </script>
 </head>
 <body class="login">
   <!-- BODY -->
@@ -41,11 +52,11 @@
             </div>
           </div>
           -->
-          <img src="assets/images/layout/logo-login.png" class="login-picture" />
+          <img src="assets/images/layout/logo-login.png" class="login-picture wow zoomIn" data-wow-delay="300ms" />
           <form action="dashboard.html">
-            <input class="form-control input-lg" name="username" placeholder="Username" type="text" />
-            <input class="form-control input-lg" name="password" placeholder="Password" type="password" />
-            <button class="btn btn-primary btn-block btn-lg" type="submit">
+            <input class="form-control input-lg wow flipInX" data-wow-delay="1s" name="username" placeholder="Username" type="text" />
+            <input class="form-control input-lg wow flipInX" data-wow-delay="1s" name="password" placeholder="Password" type="password" />
+            <button class="btn btn-primary btn-block btn-lg wow fadeIn" data-wow-delay="2s" type="submit">
               <i class="fa fa-check"></i>
               Login
             </button>
@@ -54,7 +65,7 @@
       </div>
     </section>
   </div>
-  <footer>
+  <footer class="wow fadeIn" data-wow-delay="400ms">
     <div class="aside-footer"></div>
     <div class="container-footer">
       <p>Made with <i class="fa fa-heart"></i> by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a> Download from <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank"><i class="fa fa-github"></i></a></p>
