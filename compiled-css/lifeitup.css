@@ -7924,14 +7924,6 @@ footer .aside-footer {
   top: 0;
   left: 0;
 }
-@media (max-width: 991px) {
-  footer .aside-footer {
-    display: none;
-  }
-  footer .container-footer {
-    margin-left: 0px;
-  }
-}
 .login footer {
   background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
@@ -9062,5 +9054,13 @@ a[tabindex="0"] {
 @media (min-width: 992px) {
   .alert-icon .fa {
     font-size: 3em;
+  }
+}
+@media (max-width: 991px) {
+  body:not([class*="login"]) footer .aside-footer {
+    display: none;
+  }
+  body:not([class*="login"]) footer .container-footer {
+    margin-left: 0px;
   }
 }
