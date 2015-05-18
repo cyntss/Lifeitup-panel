@@ -9,6 +9,7 @@ body {
   font-size: @body-text-size;
 }
 body.login {
+  background: url("../images/layout/bg-login.jpg") no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,13 +23,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  background: @header-user-bg;
-  border-bottom: 3px solid darken(@header-user-bg, 5%);
+  .main-colours-mix;
   height: 50px;
   .logo-header {
-    background: @header-logo-bg;
     box-sizing: border-box;
-    border-bottom: 3px solid darken(@header-logo-bg, 5%);
     display: inline-block;
     height: 50px;
     padding-top: 12px;
@@ -61,15 +59,15 @@ footer {
   font-size: 0.9em;
   position: relative;
   .container-footer {
-    margin-left: @aside-width;
     text-align: left;
     p {
-      padding: 8px 0 0 15px
+      padding: 8px 0 0 15px;
     }
   }
+  p {
+    padding: 10px;
+  }
   .aside-footer {
-    width: @aside-width;
-    background: @footer-aside-bg;
     height: 70px;
     position: absolute;
     top: 0;
@@ -89,7 +87,8 @@ footer {
   color: @footer-login-color;
 }
 
-body:not([class="login"]) {
+// special properties only when NOT in login page
+body:not([class*="login"]) {
   .container-fluid {
     padding: 0;
     padding-left: @aside-width;
@@ -178,12 +177,12 @@ body:not([class="login"]) {
       }
       a {
         color: @link-aside;
-        background: @gray-darker;
+        background: @aside;
         display: block;
         padding: 25px 15px;
-        border-left: 5px solid @gray-darker;
+        border-left: 5px solid @aside;
         &:hover {
-          background: darken(@gray-darker,10%);
+          background: darken(@aside,10%);
           text-decoration: none;
         }
       }
@@ -196,6 +195,27 @@ body:not([class="login"]) {
       .welcome-icon {
         margin-top: 100px;
       }
+    }
+  }
+  footer {
+    .aside-footer {
+      width: @aside-width;
+      background: @footer-aside-bg;
+    }
+    .container-footer {
+      margin-left: @aside-width;
+    }
+  }
+}
+
+// special rules when IN login page
+body.login {
+  .container-footer {
+    .text-center
+  }
+  footer {
+    a {
+      color: @white;
     }
   }
 }

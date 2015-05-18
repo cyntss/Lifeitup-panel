@@ -19,15 +19,16 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
+  <!-- for animation -->
+  <script type="text/javascript" src="assets/js/wow.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/style/animate/animate.css" />
   <script type="text/javascript">
-    $(document).on("ready", function(){
-      var rndNum = Math.floor((Math.random() * 2)+1);
-      $("body").css({
-          "background-image": "url(assets/images/layout/wallpaper-0" + rndNum + ".jpg)",
-          "background-repeat" : "no-repeat",
-          "background-size" : "cover"
-      }).hide().fadeIn(1000);
-    })
+  wow = new WOW(
+    {
+      offset: 50
+    }
+  )
+  wow.init();
   </script>
 </head>
 <body class="login">
@@ -38,6 +39,7 @@
       <div class="center-panel">
         <div class="col-md-4 col-sm-2 col-xs-1"></div>
         <div class="col-md-4 col-sm-8 col-xs-10 text-center">
+          <!-- Alert: use it when password is incorrect 
           <div class="alert alert-info alert-dismissible fade in text-left">
             <div class="row">
               <div class="col-sm-2 alert-icon">
@@ -49,11 +51,12 @@
               </div>
             </div>
           </div>
-          <img src="assets/images/user-profile/avatar-lg.jpg" class="circle login-picture border-transparent" />
+          -->
+          <img src="assets/images/layout/logo-login.png" class="login-picture wow zoomIn" data-wow-delay="300ms" />
           <form action="dashboard.html">
-            <input class="form-control input-lg" name="username" placeholder="Username" type="text" />
-            <input class="form-control input-lg" name="password" placeholder="Password" type="text" />
-            <button class="btn btn-primary btn-block btn-lg" type="submit">
+            <input class="form-control input-lg wow flipInX" data-wow-delay="1s" name="username" placeholder="Username" type="text" />
+            <input class="form-control input-lg wow flipInX" data-wow-delay="1s" name="password" placeholder="Password" type="password" />
+            <button class="btn btn-primary btn-block btn-lg wow fadeIn" data-wow-delay="2s" type="submit">
               <i class="fa fa-check"></i>
               Login
             </button>
@@ -62,13 +65,10 @@
       </div>
     </section>
   </div>
-  <footer>
-    <div class="row-0">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <p>This is an open source admin panel made by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a></p>
-        <p>Grab your copy from Github and dont forget the attribution back to me. <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank">Github -> Lifeitup panel</a></p>
-      </div>
+  <footer class="wow fadeIn" data-wow-delay="400ms">
+    <div class="aside-footer"></div>
+    <div class="container-footer">
+      <p>Made with <i class="fa fa-heart"></i> by <a href="http://cynt.co.nf/" target="_blank">Cynthia Sanchez.</a> Download from <a href="https://github.com/cyntss/Lifeitup-panel" target="_blank"><i class="fa fa-github"></i></a></p>
     </div>
   </footer>
 </body>
