@@ -1,4 +1,4 @@
-@media (max-width: @screen-tablet) {
+@media (max-width: $screen-tablet) {
   body:not([class="login"]) {
     .container-fluid {
       padding-left: 0px;
@@ -10,10 +10,11 @@
 }
 
 //icons in alerts
-@media (max-width: @screen-sm-max) {
+@media (max-width: $screen-sm-max) {
   .alert-icon {
     .fa {
-      .fa-lg;
+      //.fa-lg;
+      font-size: 2em;
     }
   }
   .login-picture {
@@ -21,21 +22,23 @@
     margin: 0 0 3em 0;
   }
 }
-@media (min-width: @screen-sm-min) {
+@media (min-width: $screen-sm-min) {
   .alert-icon {
     .fa {
-      .fa-2x;
+      //.fa-2x;
+      font-size: 1.3em;
     }
   }
 }
-@media (min-width: @screen-md-min) {
+@media (min-width: $screen-md-min) {
   .alert-icon {
     .fa {
-      .fa-3x;
+      //.fa-3x;
+      font-size: 1.5em
     }
   }
 }
-@media (max-width: @screen-sm-max) {
+@media (max-width: $screen-sm-max) {
   body:not([class*="login"]) footer {
     .aside-footer {
       display: none;
